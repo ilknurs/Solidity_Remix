@@ -2,6 +2,21 @@
 pragma solidity ^0.8.3;
 
 contract Enum {
+
+    enum Size {
+        S,
+        M,
+        L
+    }
+
+    Size public sizes;
+
+    function getSize() public view returns(Size){
+        return sizes;
+
+    }
+
+
     // Enum representing shipping status
     enum Status {
         Pending,
